@@ -4,8 +4,14 @@ body {
   padding-top: 70px;
 }
 
+/* HERO */
 .hero {
-  padding: 80px 0 40px;
+  padding: 90px 0 60px;
+}
+
+.hero-title {
+  font-size: 2.6rem;
+  font-weight: 700;
 }
 
 .gradient-text {
@@ -14,21 +20,45 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
+.hero-desc {
+  margin: 16px 0 24px;
+  color: #555;
+  font-size: 1.05rem;
+}
+
+.btn-cta {
+  background: linear-gradient(135deg, #ff512f, #dd2476);
+  color: #fff;
+  border-radius: 30px;
+  padding: 10px 24px;
+  border: none;
+}
+
+/* BANNER */
+.hero-banner {
+  width: 100%;
+  max-width: 420px;
+  border-radius: 30px;
+  box-shadow: 0 30px 60px rgba(0,0,0,0.2);
+}
+
+/* PRODUCTS */
 .products-section {
   padding: 40px 0 80px;
 }
 
-/* CARD */
+/* PRODUCT CARD */
 .product-card {
   background: #fff;
   border-radius: 18px;
   overflow: hidden;
   box-shadow: 0 20px 40px rgba(0,0,0,0.08);
   transition: 0.3s;
+  height: 100%;
 }
 
 .product-card:hover {
-  transform: translateY(-6px);
+  transform: translateY(-8px);
 }
 
 .product-img {
