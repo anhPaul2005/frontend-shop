@@ -1,17 +1,18 @@
-
-fetch("https://backend-api-1-t9qm.onrender.com/products")
-.then(res => res.json())
-.then(data => {
-  let html = "";
-  data.forEach(p => {
-    html += `
-    <div class="col-md-4">
-      <div class="card mb-3">
-        <div class="card-body">
-          <h5>${p.name}</h5>
-          <p>${p.price} $</p>
+fetch("https://backend-api.onrender.com/products")
+  .then(res => res.json())
+  .then(data => {
+    let html = "";
+    data.forEach(p => {
+      html += `
+        <div class="col-md-4 col-lg-3 mb-4">
+          <div class="product-card">
+            <div class="product-name">${p.name}</div>
+            <div class="product-price">${p.price.toLocaleString()} ₫</div>
+            <button class="btn btn-buy mt-3">Mua ngay</button>
+          </div>
         </div>
-      </div>`;
-  });
-  document.getElementById("products").innerHTML = html;
-});
+      `;
+    });
+    document.getElementById("products").innerHTML = html;
+  })
+  .catch(err => console.error(err));
