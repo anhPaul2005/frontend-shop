@@ -1,36 +1,11 @@
-/* GLOBAL */
 body {
   font-family: 'Poppins', sans-serif;
   background: #f6f8fc;
   padding-top: 70px;
 }
 
-/* NAVBAR */
-.navbar-glass {
-  background: rgba(255, 255, 255, 0.7);
-  backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(0,0,0,0.05);
-  height: 64px;
-}
-
-.logo {
-  font-size: 1.5rem;
-}
-
-.brand-text {
-  font-weight: 700;
-  font-size: 1.1rem;
-}
-
-/* HERO */
 .hero {
-  padding: 100px 0 80px;
-}
-
-.hero-title {
-  font-size: 2.6rem;
-  font-weight: 700;
-  line-height: 1.2;
+  padding: 80px 0 40px;
 }
 
 .gradient-text {
@@ -39,77 +14,48 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
-.hero-desc {
-  margin: 20px 0;
-  color: #555;
-}
-
-.btn-cta {
-  background: linear-gradient(135deg, #ff512f, #dd2476);
-  color: #fff;
-  padding: 10px 26px;
-  border-radius: 30px;
-  border: none;
-}
-
-.badge-hot {
-  background: linear-gradient(135deg, #ff512f, #dd2476);
-  color: #fff;
-  padding: 6px 14px;
-  border-radius: 20px;
-}
-
-/* HERO ART */
-.hero-art {
-  width: 100%;
-  height: 300px;
-  background: linear-gradient(135deg, #6a11cb, #2575fc);
-  border-radius: 30px;
-  box-shadow: 0 30px 60px rgba(0,0,0,0.15);
-}
-
-/* PRODUCTS */
 .products-section {
-  padding: 60px 0;
-  margin-top: -40px;
+  padding: 40px 0 80px;
 }
 
-.section-title {
-  font-weight: 700;
-}
-
-/* PRODUCT CARD */
+/* CARD */
 .product-card {
   background: #fff;
-  border-radius: 20px;
-  padding: 24px;
-  height: 100%;
+  border-radius: 18px;
+  overflow: hidden;
   box-shadow: 0 20px 40px rgba(0,0,0,0.08);
   transition: 0.3s;
-  position: relative;
 }
 
 .product-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 30px 60px rgba(0,0,0,0.15);
+  transform: translateY(-6px);
+}
+
+.product-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.product-body {
+  padding: 16px;
 }
 
 .product-name {
   font-weight: 600;
-  font-size: 1.1rem;
 }
 
 .product-price {
-  font-size: 1.2rem;
-  font-weight: 600;
   color: #6a11cb;
-  margin: 10px 0 16px;
+  font-weight: 600;
+  margin: 8px 0;
 }
 
 .btn-buy {
   background: linear-gradient(135deg, #ff512f, #dd2476);
-  border: none;
   color: #fff;
-  border-radius: 30px;
-  padding: 8px 20px;
+  border: none;
+  border-radius: 20px;
+  padding: 6px 16px;
+  width: 100%;
 }
